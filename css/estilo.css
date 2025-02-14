@@ -1,0 +1,77 @@
+.logo{
+    width: 55px;
+    height: auto;
+}
+
+.navbarColor{
+    background-color: #1b5535;
+}
+
+.bannerTamanho{
+    height: auto;
+    width: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black
+}
+
+.navbar {
+    flex-shrink: 0; 
+}
+
+section {
+    flex: 1;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.container-logo {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logoImg {
+    width: 100%;
+    max-width: 600px; /* Faz a logo grande */
+    display: block;
+    margin: 0 auto;
+}
+
+.text-block {
+    position: absolute;
+    background: transparent; 
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.text-top-left {
+    top: -30px;
+    left: 10px;
+}
+
+.text-middle-right {
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+}
+
+.text-bottom-left {
+    bottom: -30px;
+    left: 10px;
+}
+
+p{
+    color:white;
+}
