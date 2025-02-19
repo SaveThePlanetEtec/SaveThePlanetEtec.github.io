@@ -1,77 +1,88 @@
+@font-face {
+    font-family: 'MonsterFriendFore';
+    src: url('../assets/fonts/MonsterFriendFore.otf') format('opentype');
+}
+  
+*{
+    font-family: 'MonsterFriendFore', sans-serif;
+}
+  
+
 .logo{
     width: 55px;
     height: auto;
 }
 
 .navbarColor{
-    background-color: #1b5535;
+    background-color: rgba(34, 34, 34, 0.596) ;
+}
+.navbar{
+    backdrop-filter: blur(2px);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1)100%, rgba(0, 0, 0, 0) 0%);
 }
 
-.bannerTamanho{
-    height: auto;
-    width: 100%;
+a.nav-link.active{
+    font-weight: bold;
 }
 
+.scrolled{
+    background-color: #000000;
+}
 html, body {
     height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-color: black
+    background-color: black;
+    font-family: 'MonsterFriendFore', sans-serif;
 }
 
-.navbar {
-    flex-shrink: 0; 
+.mainContainer{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 1rem;
 }
 
-section {
-    flex: 1;
+.container{
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:90%;
+    margin:0 auto;
+}
+
+.tituloSobre{
+    color:#00d445;
+    font-weight: bolder;
+    font-size:50px;
+}
+
+.subtituloSobre{
+    font-size:25px;
+    color: #00d445;
+}
+
+.textoSobre{
+    font-size:20px;
+    color:rgb(196, 193, 193);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bold{
+    color: gainsboro;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right{
+    display:flex;
+    justify-content: end;
+    padding:2rem;
 }
 
 footer {
     flex-shrink: 0;
 }
 
-.container-logo {
-    position: relative;
-    width: 100%;
-    max-width: 800px; /* Ajuste conforme necessário */
-    margin: 0 auto;
-    text-align: center;
-}
-
-.logoImg {
-    width: 100%;
-    max-width: 600px; /* Faz a logo grande */
-    display: block;
-    margin: 0 auto;
-}
-
-.text-block {
-    position: absolute;
-    background: transparent; 
-    color: white;
-    padding: 10px 15px;
-    border-radius: 8px;
-    max-width: 300px;
-}
-
-.text-top-left {
-    top: -30px;
-    left: 10px;
-}
-
-.text-middle-right {
-    top: 50%;
-    right: -20px;
-    transform: translateY(-50%);
-}
-
-.text-bottom-left {
-    bottom: -30px;
-    left: 10px;
-}
-
-p{
-    color:white;
-}

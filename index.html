@@ -15,40 +15,49 @@
         <link rel="stylesheet" href="css/estilo.css">
     </head>
     <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbarColor">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html"><img class="logo" src="img/STPLogo.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <div class="container-fluid">
+                <img src="img/STPLogo.png" width="100">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active text-white" aria-current="page" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#!">Sobre</a></li>
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Section-->
-        <section class="py-5">
-            <div class="container-logo">
-                <img class="logoImg" src="img/STPLogo.png" alt="Save The Planet Logo">
-                
-                <div class="text-block text-top-left">
-                    <p>teste</p>
-                </div>
-                
-                <div class="text-block text-middle-right">
-                    <p>teste</p>
-                </div>
-                
-                <div class="text-block text-bottom-left">
-                    <p>teste</p>
-                </div>
+        <main>
+            <div class="mainContainer">
+                <section class="left">
+                    <div class="container">
+                        <div>
+                            <h1 class="tituloSobre">Save The Planet</h1>
+                            <h2 class="subtituloSobre">"Cada lixo conta!"</h2>
+                            <p class="textoSobre">O <bold class="bold">Save The Planet</bold> é um jogo indie que desafia você a limpar o meio ambiente em rounds rápidos. Corra contra o tempo, colete lixo e desbloqueie melhorias para tornar a missão ainda mais divertida! O nosso objetivo é te ensinar sobre a importância da <bold class="bold">sustentabilidade</bold> de forma envolvente.</p>
+                            <a class="btn btn-success" href="jogo.zip">Download</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="right">
+                    <img src="img/STPLogo.png" alt="">
+                </section>
             </div>
-        </section>
-        
+            <section id="sobre">
+                
+            </section>
+        </main>
         <!-- Footer-->
-        <footer class="py-5 navbarColor">
+            <footer class="py-5 navbarColor">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Save The Planet 2025</p></div>
         </footer>
         <!-- Bootstrap core JS-->
