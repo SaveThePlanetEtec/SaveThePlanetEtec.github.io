@@ -7,6 +7,10 @@
     font-family: 'MonsterFriendFore', sans-serif;
 }
 
+.active {
+    color: white !important;
+    background-color: transparent;
+}
 
 .logo {
     width: 55px;
@@ -14,12 +18,14 @@
 }
 
 .navbarColor {
-    background-color: rgba(34, 34, 34, 0.596);
+    background-color: rgba(34, 34, 34, 0.596) !important;
 }
 
 .navbar {
-    backdrop-filter: blur(2px);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1)100%, rgba(0, 0, 0, 0) 0%);
+    backdrop-filter: blur(20px) !important;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.1) 100%,
+            rgba(0, 0, 0, 0) 0%) !important;
 }
 
 a.nav-link.active {

@@ -1,77 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Save The Planet</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="img/STPLogo.png" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link rel="stylesheet" href="css/estilo.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-            <div class="container-fluid">
-                <img src="img/STPLogo.png" width="100">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobre">Sobre</a>
-                        </li>
-                    </ul>
-                </div>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Save The Planet</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/STPLogo.png" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="80" tabindex="0">
+    <nav class="navbar navbarColor navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home"><img class="logo" src="img/STPLogo.png" width="100" alt="STP Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <!-- Section-->
-        <main>
-            <div class="mainContainer">
-                <section class="left">
-                    <div class="container">
-                        <div>
-                            <h1 class="tituloSobre">Save The Planet</h1>
-                            <h2 class="subtituloSobre">"Cada lixo conta!"</h2>
-                            <p class="textoSobre">O <bold class="bold">Save The Planet</bold> é um jogo indie que desafia você a limpar o meio ambiente em rounds rápidos. Corra contra o tempo, colete lixo e desbloqueie melhorias para tornar a missão ainda mais divertida! O nosso objetivo é te ensinar sobre a importância da <bold class="bold">sustentabilidade</bold> de forma envolvente.</p>
-                            <a class="btn btn-success" href="STPGame.zip">Download</a>
-                        </div>
+        </div>
+    </nav>
+    <!-- Section-->
+    <main>
+        <section id="home" class="mainContainer">
+            <section class="left">
+                <div class="container">
+                    <div>
+                        <h1 class="tituloSobre">Save The Planet</h1>
+                        <h2 class="subtituloSobre">"Cada lixo conta!"</h2>
+                        <p class="textoSobre">O <bold class="bold">Save The Planet</bold> é um jogo indie que desafia
+                            você a limpar o meio ambiente em rounds rápidos. Corra contra o tempo, colete lixo e
+                            desbloqueie melhorias para tornar a missão ainda mais divertida! O nosso objetivo é te
+                            ensinar sobre a importância da <bold class="bold">sustentabilidade</bold> de forma
+                            envolvente.</p>
+                        <a class="btn btn-success" href="STPGame.zip">Download</a>
                     </div>
-                </section>
-                <section class="right">
-                    <img src="img/STPLogo.png" alt="">
-                </section>
-            </div>
-            <section id="sobre" class="sobre-section">
-                <div class="sobre-container">
-                  <h2 class="sobre-title">Sobre</h2>
-                  <p class="sobre-text">
-                    O <strong>Save The Planet</strong> nasceu da vontade de unir diversão e consciência ambiental. Nosso objetivo é criar experiências rápidas e desafiadoras que ensinem, de forma leve, a importância da sustentabilidade.
-                  </p>
-                  <p class="sobre-text">
-                    Em cada round, você corre contra o tempo para coletar o máximo de lixo possível, desbloqueando melhorias que tornam o jogo ainda mais dinâmico. Junte‑se a nós nessa jornada e ajude a salvar o planeta!
-                  </p>
                 </div>
             </section>
-        </main>
-        <!-- Footer-->
-        <footer class="py-5 navbarColor">
-            <div><p class="m-0 text-center text-white">Copyright &copy; Save The Planet 2025</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- 09/04/2025 19:33 -->
-    </body>
+            <section class="right">
+                <img src="img/STPLogo.png" alt="">
+            </section>
+        </section>
+        <section id="sobre" class="sobre-section">
+            <div class="sobre-container">
+                <h2 class="sobre-title">Sobre</h2>
+                <p class="sobre-text">
+                    O <strong>Save The Planet</strong> nasceu da vontade de unir diversão e consciência ambiental. Nosso
+                    objetivo é criar experiências rápidas e desafiadoras que ensinem, de forma leve, a importância da
+                    sustentabilidade.
+                </p>
+                <p class="sobre-text">
+                    Em cada round, você corre contra o tempo para coletar o máximo de lixo possível, desbloqueando
+                    melhorias que tornam o jogo ainda mais dinâmico. Junte‑se a nós nessa jornada e ajude a salvar o
+                    planeta!
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- Footer-->
+    <footer class="py-5 navbarColor">
+        <div>
+            <p class="m-0 text-center text-white">Copyright &copy; Save The Planet 2025</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- 09/04/2025 19:33 -->
+</body>
+
 </html>
