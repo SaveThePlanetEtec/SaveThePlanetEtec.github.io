@@ -18,7 +18,7 @@ const changelogs = [
         text: 'Achamos interessante poder mostrar para as pessoas em que lugar elas se classificariam como melhores limpadoras de lixo, nada mais justo do que ser reconhecido pelos seus feitos, né?'
     },
     {
-        title: 'v1.3 - Melhorias',
+        title: 'v1.3 - Melhorias do jogador',
         subtitle: 'SUPER PODERES!?',
         date: '26/12/2024',
         text: 'É... Acho que nosso protagonista ficou muito bom em limpar os lixos! Utilizando o dinheiro encontrado pelas partidas jogadas é possível melhorar a velocidade de coleta dos lixos e também a sua velocidade de movimento! (OBS: foi nessa parte em que nós apresentamos o nosso jogo pela primeira vez!)'
@@ -36,26 +36,16 @@ const changelogs = [
         text: 'Foi uma experiência muito boa desenvolver esse jogo, tanto tecnicamente quanto pessoalmente, hoje o nosso jogo está do jeito que queríamos que ele estivesse, e isso foi tudo graças ao esforço da equipe e apoio externo que recebemos de pessoas queridas!'
     }
 ];
-document.addEventListener('DOMContentLoaded', () => {
 
+const titleEl = document.getElementById('modalTitle');
+const subtitleEl = document.getElementById('modalSubtitle');
+const dateEl = document.getElementById('modalDate');
+const textEl = document.getElementById('modalText');
+document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     const overlay = document.getElementById('modalOverlay');
-    const titleEl = document.getElementById('modalTitle');
-    const subtitleEl = document.getElementById('modalSubtitle');
-    const dateEl = document.getElementById('modalDate');
-    const textEl = document.getElementById('modalText');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
-
-    function renderChangelog(idx) {
-        const log = changelogs[idx];
-        titleEl.textContent = log.title;
-        subtitleEl.textContent = log.subtitle;
-        dateEl.textContent = log.date;
-        textEl.textContent = log.text;
-        prevBtn.disabled = idx === 0;
-        nextBtn.disabled = idx === changelogs.length - 1;
-    }
 
     document.getElementById('openChangelog').addEventListener('click', () => {
         currentIndex = 0;
@@ -86,3 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target === overlay) overlay.style.display = 'none';
     });
 });
+
+function renderChangelog(idx) {
+    const log = changelogs[idx];
+    titleEl.textContent = log.title;
+    subtitleEl.textContent = log.subtitle;
+    dateEl.textContent = log.date;
+    textEl.textContent = log.text;
+    prevBtn.disabled = idx === 0;
+    nextBtn.disabled = idx === changelogs.length - 1;
+}
