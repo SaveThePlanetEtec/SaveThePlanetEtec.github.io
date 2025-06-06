@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentIndex = 0;
         renderChangelog(currentIndex);
         overlay.style.display = 'flex';
-        $('.modal').css('display', 'block');
+        $('#modalOverlay .modal').css('display', 'block');
     });
 
     document.getElementById('closeModal').addEventListener('click', () => {
@@ -75,6 +75,10 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.addEventListener('click', (e) => {
         if (e.target === overlay) overlay.style.display = 'none';
     });
+
+    $('#closeModalAtividades').click(() => {
+        $('#modalAtividades').hide();
+    });
 });
 
 function renderChangelog(idx) {
@@ -85,4 +89,42 @@ function renderChangelog(idx) {
     textEl.textContent = log.text;
     prevBtn.disabled = idx === 0;
     nextBtn.disabled = idx === changelogs.length - 1;
+}
+
+function abrirModalAtividades(nome){
+    if(nome == 'giovanna'){
+        $('#atividadesTitle').text('Atividades da Giovanna');
+        $('#atividadesSubtitle').text('Desenvolvimento do jogo');
+        $('#modalAtividadesText').text('Giovanna foi responsável pelas artes do jogo.');
+        $('.social-icons').html(`
+            <a href="https://github.com/giovannagrigo" target="_blank" class="me-3">
+                <i class="bi bi-github"></i>
+            </a>`
+        );
+        $(".modalAtividadesImg").attr('src', 'img/giovanna.jpg');
+    }
+    else if(nome == 'matheus'){
+        $('#atividadesTitle').text('Atividades do Matheus');
+        $('#atividadesSubtitle').text('Desenvolvimento do jogo');
+        $('#modalAtividadesText').text('Matheus foi responsável pela programação do jogo.');
+        $('.social-icons').html(`
+            <a href="https://github.com/matheuskrs" target="_blank" class="me-3">
+                <i class="bi bi-github"></i>
+            </a>`
+        );
+        $(".modalAtividadesImg").attr('src', 'img/matheus.jpg');
+    }
+    else if(nome == 'sara'){
+        $('#atividadesTitle').text('Atividades da Sara');
+        $('#atividadesSubtitle').text('Desenvolvimento do jogo');
+        $('#modalAtividadesText').text('Sara foi responsável pelas artes do jogo.');
+        $('.social-icons').html(`
+            <a href="https://github.com/saraSLeite" target="_blank" class="me-3">
+                <i class="bi bi-github"></i>
+            </a>`
+        );
+        $(".modalAtividadesImg").attr('src', 'img/sara.jpg');
+    }
+    $("#modalAtividades").css('display', 'flex');
+    $('#modalAtividades .modal').css('display', 'block');
 }

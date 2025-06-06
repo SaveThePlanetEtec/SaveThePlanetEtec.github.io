@@ -154,6 +154,32 @@ footer {
     color: #00d445;
 }
 
+#modalAtividades .row{
+    height:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    text-align: center;
+}
+
+.social-icons a i{
+    color: white;
+    transition: 200ms;
+    display: inline-block;
+}
+
+.social-icons a:hover i {
+    transform: scale(1.2);
+}
+
+.modalAtividadesImg{
+    width:200px;
+    height:auto;
+    border-radius: 15px;
+}
+
 /* ESTILIZAÇÃO DO MODAL DE UPDATES */
 .modal-overlay {
     position: fixed;
