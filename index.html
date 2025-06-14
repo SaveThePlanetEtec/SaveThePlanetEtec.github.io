@@ -14,6 +14,8 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="80" tabindex="0">
@@ -28,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#home">Início</a>
+                        <a class="nav-link active" href="#home">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#sobre">Sobre</a>
@@ -61,6 +63,11 @@
                 <img src="img/STPLogo.png" alt="">
             </section>
         </section>
+        <section class="belowBoth">
+            <div class="carouselTiposDescarte owl-carousel owl-theme">
+                <div class="trashType"></div>
+            </div>
+        </section>
         <section id="sobre" class="sobre-section">
             <div class="sobre-container">
                 <h2 class="sobre-title">Sobre</h2>
@@ -81,21 +88,15 @@
                 <h2 class="sobre-title">Desenvolvedores</h2>
                 <div class="row">
                     <div class="col-md-4 img-container">
-                        <!-- <a target="_blank" href="https://github.com/giovannagrigo"> -->
-                            <img class="img-dev" src="img/giovanna.jpg" alt="Giovanna" onclick="abrirModalAtividades('giovanna')">
-                        <!-- </a> -->
+                        <img class="img-dev" src="img/giovanna.jpg" alt="Giovanna" onclick="abrirModalAtividades('giovanna')">
                         <h5 class="dev-text">Giovanna</h5>
                     </div>
                     <div class="col-md-4 img-container">
-                        <!-- <a target="_blank" href="https://github.com/matheuskrs"> -->
-                            <img class="img-dev" src="img/matheus.jpg" alt="Matheus" onclick="abrirModalAtividades('matheus')">
-                        <!-- </a> -->
+                        <img class="img-dev" src="img/matheus.jpg" alt="Matheus" onclick="abrirModalAtividades('matheus')">
                         <h5 class="dev-text">Matheus</h5>
                     </div>
                     <div class="col-md-4 img-container">
-                        <!-- <a target="_blank" href="https://github.com/SaraSLeite"> -->
-                            <img class="img-dev" src="img/sara.jpg" alt="Sara" onclick="abrirModalAtividades('sara')">
-                        <!-- </a> -->
+                        <img class="img-dev" src="img/sara.jpg" alt="Sara" onclick="abrirModalAtividades('sara')">
                         <h5 class="dev-text">Sara</h5>
                     </div>
                 </div>
@@ -148,16 +149,16 @@
             </div>
           </div>
           
-        <button id="openChangelog" class="btn btn-success"
-            style="position: fixed; bottom: 1rem; right: 1rem;">?</button>
+        <button id="openChangelog" class="btn btn-success" style="position: fixed; bottom: 1rem; right: 1rem;">?</button>
     </main>
     <footer class="py-5 navbarColor">
         <div>
             <p class="m-0 text-center text-white">Copyright &copy; Save The Planet 2025</p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/scripts.js"></script>
 </body>
 
