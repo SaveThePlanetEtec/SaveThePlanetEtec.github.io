@@ -5,9 +5,9 @@
 
 * {
     font-family: 'MonsterFriendFore', sans-serif;
-    margin:0;
-    padding:0;
-    border:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -106,13 +106,13 @@ body {
     margin: 0 auto;
 }
 
-.trashType{
-    width:100px;
-    height:100px;
+.trashType {
+    width: 100px;
+    height: 100px;
     aspect-ratio: 1 / 1;
-    object-fit:contain;
+    object-fit: contain;
     background-color: #00d445;
-    border-radius:5px;
+    border-radius: 5px;
 }
 
 footer {
@@ -125,7 +125,8 @@ footer {
     padding: 4rem 1rem;
 }
 
-.sobre-container, .dev-container {
+.sobre-container,
+.dev-container {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
@@ -148,10 +149,65 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* RESET BÁSICO DO CARROSSEL */
+.owl-carousel div,
+.owl-carousel .owl-item {
+    height: 100%;
+}
+
+.owl-carousel .owl-item div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* ESTILO DOS CARDS */
+.owl-carousel .card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 130px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    flex: 0 0 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    border-bottom: inset;
+    max-height: 130px;
+}
+
+.card-img img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-text {
+    flex: 0 0 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
 /* ESTILIZAÇÃO DA ÁREA DE DESENVOLVEDORES */
 .img-container {
     transition: 300ms;
 }
+
 .img-container:hover {
     transform: scale(1.1);
 }
@@ -169,8 +225,8 @@ footer {
     color: #00d445;
 }
 
-#modalAtividades .row{
-    height:100%;
+#modalAtividades .row {
+    height: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -179,7 +235,7 @@ footer {
     text-align: center;
 }
 
-.social-icons a i{
+.social-icons a i {
     color: white;
     transition: 200ms;
     display: inline-block;
@@ -189,9 +245,9 @@ footer {
     transform: scale(1.2);
 }
 
-.modalAtividadesImg{
-    width:200px;
-    height:auto;
+.modalAtividadesImg {
+    width: 200px;
+    height: auto;
     border-radius: 15px;
 }
 
@@ -221,7 +277,8 @@ footer {
     max-height: 400px;
 }
 
-.modal, .modal *{
+.modal,
+.modal * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -235,17 +292,20 @@ footer {
 
 .changelogTextContainer {
     scrollbar-width: thin;
-    scrollbar-color: rgba(0,212,69,0.7) rgba(255,255,255,0.1);
+    scrollbar-color: rgba(0, 212, 69, 0.7) rgba(255, 255, 255, 0.1);
 }
+
 .changelogTextContainer::-webkit-scrollbar {
     width: 6px;
 }
+
 .changelogTextContainer::-webkit-scrollbar-track {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 3px;
 }
+
 .changelogTextContainer::-webkit-scrollbar-thumb {
-    background-color: rgba(0,212,69,0.7);
+    background-color: rgba(0, 212, 69, 0.7);
     border-radius: 3px;
 }
 
@@ -275,8 +335,8 @@ footer {
 .modal .controls {
     display: flex;
     justify-content: space-between;
-    align-items:end;
-    height:100px;
+    align-items: end;
+    height: 100px;
 }
 
 .modal .controls button {

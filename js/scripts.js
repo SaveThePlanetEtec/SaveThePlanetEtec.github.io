@@ -91,9 +91,9 @@ document.addEventListener('DOMContentLoaded', () => {
         autoplay: true,
         autoplayTimeout: 3000,
         responsive: {
-            0: { items: 5 },
-            600: { items: 6 },
-            1000: { items: 7 }
+            0: { items: 2 },
+            600: { items: 3 },
+            1000: { items: 4 }
         }
     });
     document.getElementById('openChangelog').addEventListener('click', () => {
