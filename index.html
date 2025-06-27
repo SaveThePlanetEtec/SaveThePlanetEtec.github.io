@@ -14,8 +14,10 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="80" tabindex="0">
@@ -63,11 +65,8 @@
                 <img src="img/STPLogo.png" alt="">
             </section>
         </section>
-        <section class="belowBoth">
-            <div class="carouselTiposDescarte owl-carousel owl-theme">
-                <div class="trashType"></div>
-            </div>
-        </section>
+
+
         <section id="sobre" class="sobre-section">
             <div class="sobre-container">
                 <h2 class="sobre-title">Sobre</h2>
@@ -83,16 +82,44 @@
                 </p>
             </div>
         </section>
+
+        <section id="justificativa">
+            <div class="sobre-container">
+                <h2 class="sobre-title">Justificativa</h2>
+                <p class="sobre-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet totam necessitatibus recusandae
+                    eligendi saepe natus nobis quis, libero culpa dolorem voluptates reprehenderit eum asperiores ut
+                    repellendus inventore delectus aliquam.
+                </p>
+            </div>
+        </section>
+
+        <section id="metodologia">
+            <div class="sobre-container">
+                <h2 class="sobre-title">Metodologias Utilizadas</h2>
+                <div class="owl-carousel">
+                    <div> <img src="img/Anymarket.png" alt="Unity"> </div>
+                    <div> <img src="img/Anymarket.png" alt="LibreSprite"> </div>
+                    <div> <img src="img/Anymarket.png" alt="Photoshop"> </div>
+                    <div> <img src="img/Anymarket.png" alt="Visual Studio 2022"> </div>
+                    <div> <img src="img/Anymarket.png" alt="C#"> </div>
+                    <div> <img src="img/Anymarket.png" alt="Microsoft Azure DevOps"> </div>
+                </div>
+            </div>
+        </section>
+
         <section id="desenvolvedores">
             <div class="dev-container mt-3">
                 <h2 class="sobre-title">Desenvolvedores</h2>
                 <div class="row">
                     <div class="col-md-4 img-container">
-                        <img class="img-dev" src="img/giovanna.jpg" alt="Giovanna" onclick="abrirModalAtividades('giovanna')">
+                        <img class="img-dev" src="img/giovanna.jpg" alt="Giovanna"
+                            onclick="abrirModalAtividades('giovanna')">
                         <h5 class="dev-text">Giovanna</h5>
                     </div>
                     <div class="col-md-4 img-container">
-                        <img class="img-dev" src="img/matheus.jpg" alt="Matheus" onclick="abrirModalAtividades('matheus')">
+                        <img class="img-dev" src="img/matheus.jpg" alt="Matheus"
+                            onclick="abrirModalAtividades('matheus')">
                         <h5 class="dev-text">Matheus</h5>
                     </div>
                     <div class="col-md-4 img-container">
@@ -102,6 +129,7 @@
                 </div>
             </div>
         </section>
+
         <!-- HTML DO MODAL DE UPDATES QUE DEMOS NO NOSSO JOGO -->
         <div id="modalOverlay" class="modal-overlay">
             <div class="modal">
@@ -122,34 +150,38 @@
         <!-- HTML DO MODAL DE ATIVIDADES -->
         <div id="modalAtividades" class="modal-overlay">
             <div class="modal">
-              <button class="close" id="closeModalAtividades" data-bs-target="dismiss">&times;</button>
-              <div class="row">
-                <div class="col-md-6 left-atividades text-center">
-                  <img class="modalAtividadesImg" src="img/matheus.jpg" alt="Matheus" style="max-width: 100%; height: auto; border-radius: 8px;">
-                  <div class="social-icons mt-3">
-                    <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer" class="me-3">
-                      <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" class="me-3">
-                      <i class="bi bi-github"></i>
-                    </a>
-                    <a href="https://instagram.com/seu-perfil" target="_blank" rel="noopener noreferrer">
-                      <i class="bi bi-instagram" ></i>
-                    </a>
-                  </div>
+                <button class="close" id="closeModalAtividades" data-bs-target="dismiss">&times;</button>
+                <div class="row">
+                    <div class="col-md-6 left-atividades text-center">
+                        <img class="modalAtividadesImg" src="img/matheus.jpg" alt="Matheus"
+                            style="max-width: 100%; height: auto; border-radius: 8px;">
+                        <div class="social-icons mt-3">
+                            <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer"
+                                class="me-3">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer"
+                                class="me-3">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://instagram.com/seu-perfil" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="atividadesTextContainer">
+                            <h2 id="atividadesTitle">Título</h2>
+                            <div class="subtitle" id="atividadesSubtitle">Subtítulo</div>
+                            <p id="modalAtividadesText">Texto das atividades...</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="atividadesTextContainer">
-                    <h2 id="atividadesTitle">Título</h2>
-                    <div class="subtitle" id="atividadesSubtitle">Subtítulo</div>
-                    <p id="modalAtividadesText">Texto das atividades...</p>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-          
-        <button id="openChangelog" class="btn btn-success" style="position: fixed; bottom: 1rem; right: 1rem;">?</button>
+        </div>
+
+        <button id="openChangelog" class="btn btn-success"
+            style="position: fixed; bottom: 1rem; right: 1rem;">?</button>
     </main>
     <footer class="py-5 navbarColor">
         <div>
@@ -158,7 +190,8 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
     <script src="js/scripts.js"></script>
 </body>
 

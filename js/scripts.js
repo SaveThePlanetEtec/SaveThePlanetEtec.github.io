@@ -83,25 +83,19 @@ const overlay = document.getElementById('modalOverlay');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 document.addEventListener('DOMContentLoaded', () => {
-    loadCarouselElements();
-    // $(".carouselTiposDescarte").owlCarousel({
-    //     loop: true,
-    //     nav: false,
-    //     autoplay: false,
-    //     margin:5,
-    //     responsive: 
-    //     {
-    //         0: {
-    //             items: 1
-    //         }, 
-    //         300: {
-    //             items: 3    
-    //         },
-    //         600: {
-    //             items: 5
-    //         }
-    //     }
-    // });
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        responsive: {
+            0: { items: 5 },
+            600: { items: 6 },
+            1000: { items: 7 }
+        }
+    });
     document.getElementById('openChangelog').addEventListener('click', () => {
         currentIndex = 0;
         renderChangelog(currentIndex);
@@ -135,14 +129,6 @@ document.addEventListener('DOMContentLoaded', () => {
         $('#modalAtividades').hide();
     });
 });
-
-function loadCarouselElements(){
-    var html = '';
-    for(let i = 0; i < 6; i++){
-        html += '<div class="trashType"></div>';
-    }
-    $(".carouselTiposDescarte").html(html);
-}
 
 function renderChangelog(idx) {
     const log = changelogs[idx];
