@@ -251,15 +251,26 @@ footer {
     border-radius: 15px;
 }
 
+.resultados-container{
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .print-container {
     display: flex;
     justify-content: space-between;
 }
 
 .print {
-    max-width: 395px;
+    max-width: 450px;
     min-width: 70px;
     border-radius: 5px;
+    transition: 200ms;
+}
+
+.print:hover{
+    transform: scale(1.1);
 }
 
 /* ESTILIZAÇÃO DO MODAL DE UPDATES */
