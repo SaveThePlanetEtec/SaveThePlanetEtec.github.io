@@ -37,43 +37,43 @@ const changelogs = [
     }
 ];
 
-const pessoas = 
-[
-    {
-        nome: 'giovanna',
-        title: 'Atividades da Giovanna',
-        subtitle: 'Desenvolvimento do jogo',
-        text: 'Giovanna foi responsável pelas artes, direção da ambientação do jogo, documentação e auxiliou muito com as ideias.',
-        social: `
+const pessoas =
+    [
+        {
+            nome: 'giovanna',
+            title: 'Atividades da Giovanna',
+            subtitle: 'Desenvolvimento do jogo',
+            text: 'Giovanna foi responsável pelas artes, direção da ambientação do jogo, documentação e auxiliou muito com as ideias.',
+            social: `
         <a href="https://github.com/giovannagrigo" target="_blank" class="me-3">
             <i class="bi bi-github"></i>
         </a>`,
-        imgSrc: 'img/giovanna.jpg'
-    },
-    {
-        nome: 'matheus',
-        title: 'Atividades do Matheus',
-        subtitle: 'Desenvolvimento do jogo',
-        text: 'Matheus foi responsável pela programação do jogo na Unity, também participando ativamente na idealização.',
-        social: `
+            imgSrc: 'img/giovanna.jpg'
+        },
+        {
+            nome: 'matheus',
+            title: 'Atividades do Matheus',
+            subtitle: 'Desenvolvimento do jogo',
+            text: 'Matheus foi responsável pela programação do jogo na Unity, também participando ativamente na idealização.',
+            social: `
         <a href="https://github.com/matheuskrs" target="_blank" class="me-3">
             <i class="bi bi-github"></i>
         </a>`,
-        imgSrc: 'img/matheus.jpg'
-    },
-    {
-        nome: 'sara',
-        title: 'Atividades da Sara',
-        subtitle: 'Desenvolvimento do jogo',
-        text: 'Sara foi responsável pelas artes, desenvolvendo grande parte das sprites necessárias pra dar vida ao jogo (assim como nas ideias).',
-        social: `
+            imgSrc: 'img/matheus.jpg'
+        },
+        {
+            nome: 'sara',
+            title: 'Atividades da Sara',
+            subtitle: 'Desenvolvimento do jogo',
+            text: 'Sara foi responsável pelas artes, desenvolvendo grande parte das sprites necessárias pra dar vida ao jogo (assim como nas ideias).',
+            social: `
         <a href="https://github.com/saraSLeite" target="_blank" class="me-3">
             <i class="bi bi-github"></i>
         </a>`,
-        imgSrc: 'img/sara.jpg'
-    }
-];
-  
+            imgSrc: 'img/sara.jpg'
+        }
+    ];
+
 const titleEl = document.getElementById('modalTitle');
 const subtitleEl = document.getElementById('modalSubtitle');
 const dateEl = document.getElementById('modalDate');
@@ -83,6 +83,14 @@ const overlay = document.getElementById('modalOverlay');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('.snap-container > section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle('active', entry.isIntersecting);
+    });
+  }, { threshold: 0.5 });
+
+  sections.forEach(sec => observer.observe(sec));
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -140,7 +148,7 @@ function renderChangelog(idx) {
     nextBtn.disabled = idx === changelogs.length - 1;
 }
 
-function abrirModalAtividades(nome){
+function abrirModalAtividades(nome) {
     const pessoa = pessoas.find(p => p.nome == nome);
     $('#atividadesTitle').text(pessoa.title);
     $('#atividadesSubtitle').text(pessoa.subtitle);

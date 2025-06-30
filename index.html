@@ -20,7 +20,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="80" tabindex="0">
+<body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="0" tabindex="0">
     <nav class="navbar navbarColor navbar-expand-lg fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#home"><img class="logo" src="img/STPLogo.png" width="100" alt="STP Logo"></a>
@@ -55,223 +55,229 @@
     </nav>
     <!-- Section-->
     <main>
-        <section id="home" class="mainContainer">
-            <section class="left">
-                <div class="container">
-                    <div>
-                        <h1 class="tituloSobre">Save The Planet</h1>
-                        <h2 class="subtituloSobre">"Cada lixo conta!"</h2>
-                        <p class="textoSobre">O <bold class="bold">Save The Planet</bold> é um jogo indie que desafia
-                            você a limpar o meio ambiente em rounds rápidos. Corra contra o tempo, colete lixo e
-                            desbloqueie melhorias para tornar a missão ainda mais divertida! O nosso objetivo é te
-                            ensinar sobre a importância da <bold class="bold">sustentabilidade</bold> de forma
-                            envolvente.</p>
-                        <a class="btn btn-success" href="STPGame.zip">Download</a>
+        <div class="snap-container">
+            <section id="home" class="mainContainer active">
+                <section class="left">
+                    <div class="container">
+                        <div>
+                            <h1 class="tituloSobre">Save The Planet</h1>
+                            <h2 class="subtituloSobre">"Cada lixo conta!"</h2>
+                            <p class="textoSobre">O <bold class="bold">Save The Planet</bold> é um jogo indie que
+                                desafia
+                                você a limpar o meio ambiente em rounds rápidos. Corra contra o tempo, colete lixo e
+                                desbloqueie melhorias para tornar a missão ainda mais divertida! O nosso objetivo é te
+                                ensinar sobre a importância da <bold class="bold">sustentabilidade</bold> de forma
+                                envolvente.</p>
+                            <a class="btn btn-success" href="STPGame.zip">Download</a>
+                        </div>
                     </div>
+                </section>
+                <section class="right">
+                    <img src="img/STPLogo.png" alt="">
+                </section>
+            </section>
+
+            <section id="sobre" class="sobre-section">
+                <div class="sobre-container">
+                    <h2 class="sobre-title">Sobre</h2>
+                    <p class="sobre-text">
+                        O <strong>Save The Planet</strong> nasceu da vontade de unir diversão e consciência ambiental.
+                        Nosso
+                        objetivo é criar experiências rápidas e desafiadoras que ensinem, de forma leve, a importância
+                        da
+                        sustentabilidade.
+                    </p>
+                    <p class="sobre-text">
+                        Em cada round, você corre contra o tempo para coletar o máximo de lixo possível, desbloqueando
+                        melhorias que tornam o jogo ainda mais dinâmico. Junte‑se a nós nessa jornada e ajude a salvar o
+                        planeta!
+                    </p>
                 </div>
             </section>
-            <section class="right">
-                <img src="img/STPLogo.png" alt="">
+
+            <section id="justificativa">
+                <div class="sobre-container mb-5">
+                    <h2 class="sobre-title">Justificativa</h2>
+                    <p class="sobre-text">
+                        Vivemos em um cenário em que o acúmulo de lixo nas ruas, rios e áreas verdes cresce a cada ano,
+                        gerando consequências graves como enchentes, poluição de mananciais e propagação de doenças.
+                        Estudos
+                        indicam que mais de 90% dos resíduos poderiam ser reciclados ou reaproveitados, mas apenas uma
+                        pequena parcela da população tem o hábito consolidado de separar corretamente o lixo em casa e
+                        na
+                        escola. Essa falta de conscientização e engajamento ambiental é uma “dor” percebida pela nossa
+                        equipe que impacta diretamente a saúde pública e a qualidade de vida nas cidades.
+                    </p>
+                </div>
             </section>
-        </section>
 
-        <section id="sobre" class="sobre-section">
-            <div class="sobre-container">
-                <h2 class="sobre-title">Sobre</h2>
-                <p class="sobre-text">
-                    O <strong>Save The Planet</strong> nasceu da vontade de unir diversão e consciência ambiental. Nosso
-                    objetivo é criar experiências rápidas e desafiadoras que ensinem, de forma leve, a importância da
-                    sustentabilidade.
-                </p>
-                <p class="sobre-text">
-                    Em cada round, você corre contra o tempo para coletar o máximo de lixo possível, desbloqueando
-                    melhorias que tornam o jogo ainda mais dinâmico. Junte‑se a nós nessa jornada e ajude a salvar o
-                    planeta!
-                </p>
-            </div>
-        </section>
-
-        <section id="justificativa">
-            <div class="sobre-container mb-5">
-                <h2 class="sobre-title">Justificativa</h2>
-                <p class="sobre-text">
-                    Vivemos em um cenário em que o acúmulo de lixo nas ruas, rios e áreas verdes cresce a cada ano,
-                    gerando consequências graves como enchentes, poluição de mananciais e propagação de doenças. Estudos
-                    indicam que mais de 90% dos resíduos poderiam ser reciclados ou reaproveitados, mas apenas uma
-                    pequena parcela da população tem o hábito consolidado de separar corretamente o lixo em casa e na
-                    escola. Essa falta de conscientização e engajamento ambiental é uma “dor” percebida pela nossa
-                    equipe que impacta diretamente a saúde pública e a qualidade de vida nas cidades.
-                </p>
-            </div>
-        </section>
-
-        <section id="metodologia">
-            <div class="sobre-container">
+            <section id="metodologia">
                 <h2 class="sobre-title">Metodologias Utilizadas</h2>
-                <div class="owl-carousel mb-5">
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="img/unity.png" alt="Unity">
+                <div class="sobre-container">
+                    <div class="owl-carousel mb-5">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="img/unity.png" alt="Unity">
+                            </div>
+                            <div class="card-text">
+                                Unity
+                            </div>
                         </div>
-                        <div class="card-text">
-                            Unity
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="img/libresprite.png" alt="LibreSprite">
+                            </div>
+                            <div class="card-text">
+                                LibreSprite
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="img/libresprite.png" alt="LibreSprite">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="img/photoshop.png" alt="Photoshop">
+                            </div>
+                            <div class="card-text">
+                                Photoshop
+                            </div>
                         </div>
-                        <div class="card-text">
-                            LibreSprite
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="img/visualStudio.png" alt="Visual Studio 2022">
+                            </div>
+                            <div class="card-text">
+                                Visual Studio 2022
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="img/photoshop.png" alt="Photoshop">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="img/cSharp.png" alt="C#">
+                            </div>
+                            <div class="card-text">
+                                C#
+                            </div>
                         </div>
-                        <div class="card-text">
-                            Photoshop
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="img/html.png" alt="HTML">
+                            </div>
+                            <div class="card-text">
+                                HTML
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="img/visualStudio.png" alt="Visual Studio 2022">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="img/css.png" alt="CSS">
+                            </div>
+                            <div class="card-text">
+                                CSS
+                            </div>
                         </div>
-                        <div class="card-text">
-                            Visual Studio 2022
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="img/js.png" alt="JavaScript">
+                            </div>
+                            <div class="card-text">
+                                JavaScript
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="img/cSharp.png" alt="C#">
-                        </div>
-                        <div class="card-text">
-                            C#
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="img/html.png" alt="HTML">
-                        </div>
-                        <div class="card-text">
-                            HTML
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="img/css.png" alt="CSS">
-                        </div>
-                        <div class="card-text">
-                            CSS
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="img/js.png" alt="JavaScript">
-                        </div>
-                        <div class="card-text">
-                            JavaScript
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="img/devops.png" alt="Microsoft Azure DevOps">
-                        </div>
-                        <div class="card-text">
-                            Microsoft Azure DevOps
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="img/devops.png" alt="Microsoft Azure DevOps">
+                            </div>
+                            <div class="card-text">
+                                Microsoft Azure DevOps
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="resultadosObtidos">
-            <div class="resultados-container mb-5">
-                <h2 class="sobre-title">Resultados Obtidos</h2>
-                <div class="print-container">
-                    <img class="print" src="img/print1.png" alt="Coletando Lixo">
-                    <img class="print" src="img/print2.png" alt="Separando Lixo">
+            <section id="resultadosObtidos">
+                <div class="resultados-container mb-5">
+                    <h2 class="sobre-title">Resultados Obtidos</h2>
+                    <div class="print-container">
+                        <img class="print" src="img/print1.png" alt="Coletando Lixo">
+                        <img class="print" src="img/print2.png" alt="Separando Lixo">
+                    </div>
+                </div>
+            </section>
+
+            <section id="desenvolvedores">
+                <div class="dev-container mt-5">
+                    <h2 class="sobre-title">Desenvolvedores</h2>
+                    <div class="row">
+                        <div class="col-md-4 img-container">
+                            <img class="img-dev" src="img/giovanna.jpg" alt="Giovanna"
+                                onclick="abrirModalAtividades('giovanna')">
+                            <h5 class="dev-text">Giovanna</h5>
+                        </div>
+                        <div class="col-md-4 img-container">
+                            <img class="img-dev" src="img/matheus.jpg" alt="Matheus"
+                                onclick="abrirModalAtividades('matheus')">
+                            <h5 class="dev-text">Matheus</h5>
+                        </div>
+                        <div class="col-md-4 img-container">
+                            <img class="img-dev" src="img/sara.jpg" alt="Sara" onclick="abrirModalAtividades('sara')">
+                            <h5 class="dev-text">Sara</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- HTML DO MODAL DE UPDATES QUE DEMOS NO NOSSO JOGO -->
+            <div id="modalOverlay" class="modal-overlay">
+                <div class="modal">
+                    <button class="close" id="closeModal">&times;</button>
+                    <div class="changelogTextContainer">
+                        <h2 id="modalTitle">Título</h2>
+                        <div class="subtitle" id="modalSubtitle">Subtítulo</div>
+                        <div class="date" id="modalDate">00/00/0000</div>
+                        <p id="modalText">Texto do changelog...</p>
+                    </div>
+                    <div class="controls">
+                        <button id="prevBtn">Anterior</button>
+                        <button id="nextBtn">Próximo</button>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <section id="desenvolvedores">
-            <div class="dev-container mt-5">
-                <h2 class="sobre-title">Desenvolvedores</h2>
-                <div class="row">
-                    <div class="col-md-4 img-container">
-                        <img class="img-dev" src="img/giovanna.jpg" alt="Giovanna"
-                            onclick="abrirModalAtividades('giovanna')">
-                        <h5 class="dev-text">Giovanna</h5>
+            <!-- HTML DO MODAL DE ATIVIDADES -->
+            <div id="modalAtividades" class="modal-overlay">
+                <div class="modal">
+                    <button class="close" id="closeModalAtividades" data-bs-target="dismiss">&times;</button>
+                    <div class="row">
+                        <div class="col-md-6 left-atividades text-center">
+                            <img class="modalAtividadesImg" src="img/matheus.jpg" alt="Matheus"
+                                style="max-width: 100%; height: auto; border-radius: 8px;">
+                            <div class="social-icons mt-3">
+                                <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer"
+                                    class="me-3">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer"
+                                    class="me-3">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://instagram.com/seu-perfil" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="atividadesTextContainer">
+                                <h2 id="atividadesTitle">Título</h2>
+                                <div class="subtitle" id="atividadesSubtitle">Subtítulo</div>
+                                <p id="modalAtividadesText">Texto das atividades...</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 img-container">
-                        <img class="img-dev" src="img/matheus.jpg" alt="Matheus"
-                            onclick="abrirModalAtividades('matheus')">
-                        <h5 class="dev-text">Matheus</h5>
-                    </div>
-                    <div class="col-md-4 img-container">
-                        <img class="img-dev" src="img/sara.jpg" alt="Sara" onclick="abrirModalAtividades('sara')">
-                        <h5 class="dev-text">Sara</h5>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- HTML DO MODAL DE UPDATES QUE DEMOS NO NOSSO JOGO -->
-        <div id="modalOverlay" class="modal-overlay">
-            <div class="modal">
-                <button class="close" id="closeModal">&times;</button>
-                <div class="changelogTextContainer">
-                    <h2 id="modalTitle">Título</h2>
-                    <div class="subtitle" id="modalSubtitle">Subtítulo</div>
-                    <div class="date" id="modalDate">00/00/0000</div>
-                    <p id="modalText">Texto do changelog...</p>
-                </div>
-                <div class="controls">
-                    <button id="prevBtn">Anterior</button>
-                    <button id="nextBtn">Próximo</button>
                 </div>
             </div>
         </div>
-
-        <!-- HTML DO MODAL DE ATIVIDADES -->
-        <div id="modalAtividades" class="modal-overlay">
-            <div class="modal">
-                <button class="close" id="closeModalAtividades" data-bs-target="dismiss">&times;</button>
-                <div class="row">
-                    <div class="col-md-6 left-atividades text-center">
-                        <img class="modalAtividadesImg" src="img/matheus.jpg" alt="Matheus"
-                            style="max-width: 100%; height: auto; border-radius: 8px;">
-                        <div class="social-icons mt-3">
-                            <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer"
-                                class="me-3">
-                                <i class="bi bi-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer"
-                                class="me-3">
-                                <i class="bi bi-github"></i>
-                            </a>
-                            <a href="https://instagram.com/seu-perfil" target="_blank" rel="noopener noreferrer">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="atividadesTextContainer">
-                            <h2 id="atividadesTitle">Título</h2>
-                            <div class="subtitle" id="atividadesSubtitle">Subtítulo</div>
-                            <p id="modalAtividadesText">Texto das atividades...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <button id="openChangelog" class="btn btn-success"
             style="position: fixed; bottom: 1rem; right: 1rem;">?</button>
     </main>
-    <footer class="py-5 navbarColor">
+    <footer class="py-3 navbarColor">
         <div>
             <p class="m-0 text-center text-white">Copyright &copy; Save The Planet 2025</p>
         </div>

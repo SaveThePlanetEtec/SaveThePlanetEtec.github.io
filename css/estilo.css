@@ -25,7 +25,8 @@
     background-color: rgba(34, 34, 34, 0.596) !important;
 }
 
-.navbar {
+footer.navbar {
+
     backdrop-filter: blur(20px) !important;
     background: linear-gradient(to bottom,
             rgba(0, 0, 0, 0.1) 100%,
@@ -40,12 +41,18 @@ a.nav-link.active {
     background-color: #000000;
 }
 
+html::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
 html,
 body {
-    height: 100%;
-    width: 100%;
-    flex-grow: 1;
-    margin: 0;
     display: flex;
     flex-direction: column;
     background: url('../img/fundo.png') repeat;
@@ -54,6 +61,43 @@ body {
     background-attachment: fixed;
     object-fit: cover;
     font-family: 'MonsterFriendFore', sans-serif;
+}
+
+.snap-container {
+    padding-top:5rem;
+    height: calc(100vh - 56px);
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    width: 90%;
+    margin: 0 auto;
+}
+.snap-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.snap-container {
+  scrollbar-width: none;
+}
+
+.snap-container {
+  -ms-overflow-style: none;
+}
+
+.snap-container>section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    min-height: calc(100vh - 56px);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.snap-container>section.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .mainContainer {
@@ -132,6 +176,8 @@ footer {
     text-align: center;
 }
 
+
+
 .sobre-title {
     font-size: 2.5rem;
     color: #00d445;
@@ -162,6 +208,11 @@ footer {
 }
 
 /* ESTILO DOS CARDS */
+#metodologia {
+    flex-direction: column;
+    justify-content: center;
+}
+
 .owl-carousel .card {
     background: #fff;
     border-radius: 8px;
@@ -204,6 +255,19 @@ footer {
 }
 
 /* ESTILIZAÇÃO DA ÁREA DE DESENVOLVEDORES */
+#desenvolvedores {
+    display: block;
+    padding-bottom: 100px;
+}
+
+.dev-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 .img-container {
     transition: 300ms;
 }
@@ -251,7 +315,7 @@ footer {
     border-radius: 15px;
 }
 
-.resultados-container{
+.resultados-container {
     max-width: 950px;
     margin: 0 auto;
     text-align: center;
@@ -259,17 +323,18 @@ footer {
 
 .print-container {
     display: flex;
+    gap: 16px;
     justify-content: space-between;
 }
 
 .print {
-    max-width: 450px;
+    max-width: 300px;
     min-width: 70px;
     border-radius: 5px;
     transition: 200ms;
 }
 
-.print:hover{
+.print:hover {
     transform: scale(1.1);
 }
 
@@ -385,6 +450,49 @@ footer {
     font-size: 1.2rem;
     cursor: pointer;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .sobre-title {
+        font-size: 1.75rem;
+    }
+
+    .tituloSobre {
+        font-size: 2.5rem;
+    }
+
+    .subtituloSobre {
+        font-size: 1.25rem;
+    }
+
+    main>section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .sobre-title {
+        font-size: 1.5rem;
+    }
+
+    .tituloSobre {
+        font-size: 2rem;
+    }
+
+    .subtituloSobre {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 600px) {
